@@ -1,0 +1,35 @@
+.aboutus-title {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 80px;
+}
+.aboutus-content {
+  margin: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.aboutus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.aboutus-p {
+  margin-top: 32px;
+  font-size: 25px;
+}
+
+.aboutus-collection {
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+.aboutus-collection-p {
+  margin-top: 16px;
+  font-size: 25px;
+}
+.aboutus-img {
+  width: 500px;
+}
