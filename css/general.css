@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
 * {
   margin: 0;
   padding: 0px;
@@ -16,12 +22,18 @@ p {
 }
 h1 {
   font-size: 80px;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
 }
-
+h2 {
+  font: 30px;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
+}
 /*********MENU*******/
 
 .topbar {
-  background-color: #e4deb3;
+  background-color: rgb(230, 225, 187);
   padding: 50px 60px;
   display: flex;
   align-items: center;

@@ -1,35 +1,140 @@
 .aboutus-title {
   text-align: center;
   margin-top: 32px;
-  font-size: 80px;
+  font-size: 60px;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
 }
+
+.aboutus-media {
+  margin: 40px;
+  margin-bottom: 32px;
+}
+
 .aboutus-content {
-  margin: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
+  column-gap: 80px;
+  align-items: stretch;
 }
-.aboutus-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
+
+.aboutus-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 450px;
 }
+
 .aboutus-p {
-  margin-top: 32px;
   font-size: 25px;
 }
 
 .aboutus-collection {
-  margin-top: 25px;
   font-size: 30px;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
 }
 
 .aboutus-collection-p {
-  margin-top: 16px;
   font-size: 25px;
 }
+
 .aboutus-img {
-  width: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: end;
+}
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(148, 148, 148);
+  margin: 48px 0;
+}
+.customers-say {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 30px;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
+}
+.customers-reviews2 {
+  display: flex;
+  gap: 40px;
+  margin: 40px;
+  margin-top: 70px;
+}
+.customer-review {
+  background-color: #364585; /* blå kort */
+  color: white;
+  padding: 36px 32px 110px;
+  border-radius: 16px;
+  font-size: 18px;
+  padding-top: 20px;
+  flex: 1;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.customer-review::after {
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 25px;
+  background-color: #e6e6e6;
+  border-radius: 999px;
+  width: calc(100% - 64px); /* ✅ 32px i hver side */
+}
+
+.aboutus-btn {
+  margin-left: 40px;
+  margin-bottom: 32px;
+  padding: 10px 80px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #5b73a6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
+  letter-spacing: 8px;
+}
+@media (max-width: 768px) {
+  /* About us layout */
+  .aboutus-content {
+    grid-template-columns: 1fr; /* tekst og billede under hinanden */
+  }
+  .aboutus-img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .aboutus-text {
+    max-width: 100%;
+  }
+
+  /* Customer reviews */
+  .customers-reviews2 {
+    flex-direction: column; /* boksene under hinanden */
+    align-items: center;
+  }
+
+  .customer-review {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  /* Titler */
+  .aboutus-title {
+    font-size: 40px;
+  }
+
+  .testimonials-title {
+    font-size: 25px;
+  }
 }
