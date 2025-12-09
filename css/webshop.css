@@ -46,7 +46,7 @@
   padding: 15px 0;
 }
 
-.catergories_button {
+.categories_section button {
   background-color: #e95c5a;
   border-radius: 7px;
   padding: 10px 15px;
@@ -108,6 +108,10 @@
   padding: 10px;
 
   box-sizing: border-box;
+}
+
+.product_info p {
+  font-size: 1rem;
 }
 
 /* Desktop */
