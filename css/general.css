@@ -48,6 +48,10 @@ h2 {
   font-family: "Sanchez";
   src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
 }
+.h3 {
+  font-family: "Sanchez";
+  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+}
 .label {
   font-family: "InstrumentSans", sans-serif;
 }
@@ -173,6 +177,10 @@ h2 {
   z-index: 2;
 }
 .days {
+  display: flex;
+  flex-direction: column;
+}
+.hours {
   display: flex;
   flex-direction: column;
 }
