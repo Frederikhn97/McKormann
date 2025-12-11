@@ -7,19 +7,128 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/nyhedsbrev.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/burger.css">
 </head>
-<header class="topbar">
-    <div class="nav-left">
-        <a href="index.html" class="nav-btn">Forside</a>
-        <a href="AboutUs.html" class="nav-btn">About us</a>
-    </div>
-    <div class="nav-right">
-        <a href="nyhedsbrev.html" class="nav-btn">News</a>
-        <a href="webshop.html" class="nav-btn">Webshop</a>
-    </div>
-</header>
 
 <body>
+    <header class="topbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-btn">Forside</a>
+            <a href="AboutUs.html" class="nav-btn">About us</a>
+        </div>
+        <div class="nav-right">
+            <a href="nyhedsbrev.html" class="nav-btn">News</a>
+            <a href="webshop.html" class="nav-btn">Webshop</a>
+        </div>
+
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </header>
+    <div class="menu-panel">
+        <a href="index.html">Forside</a>
+        <a href="AboutUs.html">About us</a>
+        <a href="nyhedsbrev.html">News</a>
+        <a href="webshop.html">Webshop</a>
+    </div>
+
+    <main>
+        <div class="news-info">
+            <h1>News</h1>
+            <p>Here you will find our latest news</p>
+        </div>
+        <section id="news-arrivals-section">
+            <div class="news-arrivals">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="flexarrivals">
+                <img src="alarm.svg" alt="alarmko">
+                <img src="alarm.svg" alt="alarmko">
+                <img src="alarm.svg" alt="alarmko">
+            </div>
+            <a href="webshop.html" class="viewmorebutton">
+                <button>View More</button>
+            </a>
+        </section>
+        <section id="ny-section">
+            <div class="news-arrivals">
+                <h2>Our Christmas and New Year’s collection is now in store!</h2>
+            </div>
+            <div class="news-ny-flex">
+                <p> Come discover your glamorous outfit for the festive season — whether you’re looking for a sparkling
+                    dress, an elegant
+                    suit, or the perfect accessories to complete your look.
+
+                    Get ready to shine this holiday season!
+                    Stop by, celebrate with us, and enjoy some fantastic deals while you’re here.
+
+                    We can’t wait to help you find your perfect vintage holiday style!</p>
+                <div>
+                    <img src="alarm.svg" alt="alarmko">
+                </div>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <div class="form-info">
+                <h2>Newsletter</h2>
+                <p>Sign up for our newsletter and receive information about new arrivals, mid-season sales and much
+                    more.
+                </p>
+            </div>
+
+            <form id="newsletter-form">
+                <div class="form-block-container">
+                    <div class="formgroup">
+                        <label for="firstname">Firstname</label>
+                        <input id="firstname" type="text" name="name" placeholder="Type here" pattern="[A-Za-z]{2,}"
+                            required />
+                        <span></span>
+                    </div>
+                    <div class="formgroup">
+                        <label for="lastname">Lastname </label>
+                        <input id="lastname" type="text" name="name" placeholder="Type here" pattern="[A-Za-z]{2,}"
+                            required />
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-block-container">
+                    <div class="formgroup">
+                        <label for="email">Emailadress</label>
+                        <input id="email" type="email" name="email" placeholder="Requires @ tag" required />
+                        <span class="fejlmeddelelse"></span>
+                    </div>
+                </div>
+                </div>
+
+                <div class="form-flex-container">
+                    <div class="formgroupcheckbox">
+                        <span>
+                            <label>
+                                <input id="consent" type="checkbox" name="consent" required />
+                                Yes, I consent to receiving newsletters
+                            </label>
+                        </span>
+                    </div>
+                    <div class="formgroupcheckbox">
+                        <span>
+                            <label>
+                                <input id="terms" type="checkbox" name="terms" required />
+                                Yes, I agree to the terms and conditions
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <button class="signup" type="submit">Sign up for our newsletter</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>
