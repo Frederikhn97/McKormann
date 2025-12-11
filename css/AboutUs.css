@@ -133,11 +133,20 @@
     height: auto;
     display: none;
   }
-
+  .aboutus-p {
+    font-size: 18px;
+  }
+  .aboutus-collection-p {
+    font-size: 18px;
+  }
   .aboutus-text {
     max-width: 100%;
   }
-
+  .aboutus-title {
+    text-align: left;
+    margin-left: 40px;
+    padding: 0 16px;
+  }
   /* Customer reviews */
   .customers-reviews2 {
     flex-direction: column; /* boksene under hinanden */
