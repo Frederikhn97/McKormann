@@ -48,6 +48,9 @@ h2 {
   font-family: "Sanchez";
   src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
 }
+.label {
+  font-family: "InstrumentSans", sans-serif;
+}
 .logo {
   width: 200px;
   height: auto;
@@ -169,24 +172,9 @@ h2 {
   position: relative;
   z-index: 2;
 }
-.instagram-tekst {
-  margin-left: -110px;
-}
-.facebook-tekst {
-  margin-left: -110px;
-}
-.footer-grid {
-  display: none;
-}
-.footerh2v2 {
-  display: none;
-}
 .days {
   display: flex;
   flex-direction: column;
-}
-
-.days span {
 }
 @media (max-width: 600px) {
   .info-sektion > *:nth-child(4),
