@@ -1,0 +1,63 @@
+.section {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+.product_img {
+  padding: 10px;
+  margin: 18px;
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+}
+.product_img1 {
+  padding: 15px;
+  margin: 10px;
+  height: 300px;
+  width: auto;
+}
+.button {
+  background-color: #34478b;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 22px;
+  font-size: 15px;
+  letter-spacing: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 4px auto 0 auto; /* center the button */
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  max-width: 900px;
+  width: 100%;
+  padding: 28px 0;
+  font-size: 30px;
+  border-radius: 12px;
+}
+.right-column {
+  color: rgb(14, 0, 0);
+  padding: 40px;
+}
+
+.dropdown {
+  background-color: #d6d0a8; /* beige pill background */
+  color: #000;
+  width: 350px;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 25px; /* rounded ends */
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.dropdown .arrow {
+  margin-right: 18px;
+  font-size: 20px;
+}
