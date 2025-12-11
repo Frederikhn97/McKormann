@@ -28,3 +28,54 @@ function showDecades() {
   categoriBar.classList.add("hide");
   brandBar.classList.add("hide");
 }
+
+/*********** Animation_on_cards *******************/
+
+document.querySelector("#product_card-1").addEventListener("mouseover", changeImg);
+function changeImg() {
+  console.log("Der sker noget");
+  document.querySelector(".product_img1").classList.add("hide");
+  document.querySelector(".product_img1_2").classList.remove("hide");
+}
+
+document.querySelector("#product_card-1").addEventListener("mouseout", changeImgBack);
+function changeImgBack() {
+  console.log("Der sker noget");
+
+  document.querySelector(".product_img1_2").classList.add("hide");
+  document.querySelector(".product_img1").classList.remove("hide");
+}
+
+/* NR 2 */
+
+document.querySelector("#product_card-2").addEventListener("mouseover", changeImg2);
+function changeImg2() {
+  console.log("Der sker noget");
+  document.querySelector(".product_img2").classList.add("hide");
+  document.querySelector(".product_img2_2").classList.remove("hide");
+}
+
+document.querySelector("#product_card-2").addEventListener("mouseout", changeImg2Back);
+function changeImg2Back() {
+  console.log("Der sker noget");
+
+  document.querySelector(".product_img2_2").classList.add("hide");
+  document.querySelector(".product_img2").classList.remove("hide");
+}
+
+/* NR 3 */
+
+document.querySelector("#product_card-3").addEventListener("mouseover", changeImg3);
+function changeImg3() {
+  console.log("Der sker noget");
+  document.querySelector(".product_img3").classList.add("hide");
+  document.querySelector(".product_img3_2").classList.remove("hide");
+}
+
+document.querySelector("#product_card-3").addEventListener("mouseout", changeImg3Back);
+function changeImg3Back() {
+  console.log("Der sker noget");
+
+  document.querySelector(".product_img3_2").classList.add("hide");
+  document.querySelector(".product_img3").classList.remove("hide");
+}
