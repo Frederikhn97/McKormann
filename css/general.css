@@ -4,6 +4,20 @@
   font-style: italic;
   font-weight: normal;
 }
+/* @font-face {
+  font-family: "InstrumentSansCustom";
+  src: local("Instrument Sans Regular"), local("InstrumentSans-Regular"), url("./InstrumentSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+} */
+@font-face {
+  font-family: "InstrumentSans";
+  src: url("../InstrumentSans-Regular.woff2") format("woff2"), url("../InstrumentSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0px;
@@ -18,7 +32,7 @@ body {
   background-color: rgb(230, 225, 187);
 }
 p {
-  font-size: 30px;
+  font-family: "InstrumentSans", sans-serif;
 }
 h1 {
   font-size: 80px;
@@ -30,6 +44,13 @@ h2 {
   font-family: "Sanchez";
   src: url("Sanchez-Italic.ttf") format("truetype");
 }
+.logo {
+  width: 200px;
+  height: auto;
+  position: relative;
+  z-index: 2; /* 👈 over striberne */
+}
+
 /*********MENU*******/
 
 .topbar {
@@ -71,4 +92,112 @@ h2 {
   font-size: 14px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 768px) {
+  .nav-left,
+  .nav-right {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 6px 18px;
+    background-color: #3e4b93;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+}
 /*********MENU DONE*******/
+
+/*********FOOTER*******/
+
+.info-sektion,
+.info-sektion2,
+.info-sektion3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 20px 0;
+  align-items: center;
+  font-size: 32;
+  margin: 40px;
+  margin-bottom: 32px;
+}
+.info-sektion2 {
+  margin-bottom: -30px; /* eller hvad du ønsker */
+}
+.facebook-icon img {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+  justify-self: start;
+  align-self: center;
+}
+.dobbelt-sektion {
+  margin-top: 64px;
+}
+.footerh2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.footer.logo {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.instagram-tekst {
+  margin-left: -110px;
+}
+.facebook-tekst {
+  margin-left: -110px;
+}
+@media (max-width: 600px) {
+  /* skjul 4. kolonne */
+  .info-sektion > *:nth-child(4),
+  .info-sektion2 > *:nth-child(4),
+  .info-sektion3 > *:nth-child(4) {
+    display: none;
+  }
+
+  .info-sektion,
+  .info-sektion2,
+  .info-sektion3 {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 15px;
+    gap: 12px;
+    text-align: left;
+    margin: 0; /* dette sikrer alignment */
+    padding: 0 20px; /* lille indrykning som resten af siden */
+  }
+  .dobbelt-sektion {
+    margin-bottom: 32px;
+    /* background-color: rgb(255, 249, 208); */
+  }
+  .info-sektion2 {
+    margin-bottom: 15px;
+  }
+  .footerh2 {
+    text-align: left;
+    margin: 0 20px;
+    margin-bottom: 40px;
+  }
+  .instagram-tekst {
+    display: none;
+  }
+  .facebook-tekst {
+    display: none;
+  }
+}

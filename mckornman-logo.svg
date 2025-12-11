@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 843.6 888.73">
+  <g id="Plektar_form" data-name="Plektar form">
+    <path d="M486.93,861.99c-41.64,37.16-105.12,35.37-144.71-3.97-85.49-84.94-202.11-231.44-254.02-442.2-6.2-25.17-11.11-49.76-14.92-73.66C49.26,191.77,166.49,55.91,318.78,56.6c69.42.31,138.85.62,208.27.93,146.26.65,260.76,127.47,244.94,272.87-1.71,15.75-3.95,31.81-6.78,48.16-41.05,237.47-183.02,398.41-278.28,483.42Z" style="fill: #004284;"/>
+  </g>
+  <g id="Lyn">
+    <polygon points="401.12 277.91 396.34 0 658.55 479.6 493.44 453.03 641.03 882.52 241.44 277.1 401.12 277.91" style="fill: red;"/>
+  </g>
+  <g id="Mckornman">
+    <rect x="0" y="286.17" width="843.6" height="164.4" rx="82.2" ry="82.2" style="fill: #e6e1bb;"/>
+    <line x1="106.65" y1="388.55" x2="764.1" y2="388.55" style="fill: red; opacity: .6; stroke: red; stroke-miterlimit: 10; stroke-width: 8px;"/>
+    <line x1="106.65" y1="368.37" x2="764.1" y2="368.37" style="fill: red; opacity: .6; stroke: red; stroke-miterlimit: 10; stroke-width: 8px;"/>
+    <line x1="106.65" y1="348.18" x2="764.1" y2="348.18" style="fill: red; opacity: .6; stroke: red; stroke-miterlimit: 10; stroke-width: 8px;"/>
+    <text transform="translate(148.75 400.4) scale(1.07 1)" style="fill: #004284; font-family: MyriadConceptRoman-BlackCond, &apos;Myriad Variable Concept&apos;; font-size: 124.16px; font-variation-settings: &apos;wght&apos; 900, &apos;wdth&apos; 70; font-weight: 800;"><tspan x="0" y="0" xml:space="preserve">McK   rnman</tspan></text>
+    <path d="M383.64,403.11c-3.8,3.32-9.58,3.15-13.19-.36-7.79-7.58-18.43-20.66-23.16-39.47-.57-2.25-1.01-4.44-1.36-6.57-2.19-13.42,8.49-25.54,22.38-25.48,6.33.03,12.66.06,18.99.09,13.33.06,23.77,11.38,22.33,24.36-.16,1.41-.36,2.84-.62,4.3-3.74,21.19-16.68,35.55-25.36,43.14Z" style="fill: #004284;"/>
+    <polygon points="372.62 354.27 372.69 354.45 372.36 335.37 388.12 368.79 377.93 369.11 385.64 395.38 363.96 354.21 372.62 354.27" style="fill: #fff;"/>
+  </g>
+</svg>

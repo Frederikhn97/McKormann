@@ -53,6 +53,7 @@
 }
 .customers-say {
   text-align: center;
+  margin: 0 0 32px 0;
   margin-top: 32px;
   font-size: 30px;
   font-family: "Sanchez";
@@ -75,7 +76,7 @@
   position: relative;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-.customer-review::after {
+/* .customer-review::after {
   content: "";
   position: absolute;
   bottom: 24px;
@@ -85,9 +86,27 @@
   height: 25px;
   background-color: #e6e6e6;
   border-radius: 999px;
-  width: calc(100% - 64px); /* ✅ 32px i hver side */
-}
+  width: calc(100% - 64px); 
+} */
+.customer-name {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 64px);
+  height: 25px;
+  background-color: #e6e6e6;
+  border-radius: 999px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #364585;
+  font-size: 16px;
+  font-family: "Sanchez";
+  src: url("Sanchez-Italic.ttf") format("truetype");
+}
 .aboutus-btn {
   margin-left: 40px;
   margin-bottom: 32px;
@@ -108,6 +127,9 @@
   .aboutus-content {
     grid-template-columns: 1fr; /* tekst og billede under hinanden */
   }
+  .overall {
+    padding: 0 16px;
+  }
   .aboutus-img {
     width: 100%;
     height: auto;
@@ -121,7 +143,7 @@
   /* Customer reviews */
   .customers-reviews2 {
     flex-direction: column; /* boksene under hinanden */
-    align-items: center;
+    align-items: stretch;
   }
 
   .customer-review {
@@ -136,5 +158,13 @@
 
   .testimonials-title {
     font-size: 25px;
+  }
+  .customers-say {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 32px;
+    font-size: 25px;
+    font-family: "Sanchez";
+    src: url("Sanchez-Italic.ttf") format("truetype");
   }
 }
