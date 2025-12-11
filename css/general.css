@@ -1,8 +1,9 @@
 @font-face {
   font-family: "Sanchez";
-  src: url("Sanchez-Italic.ttf") format("truetype");
+  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
 }
 /* @font-face {
   font-family: "InstrumentSansCustom";
@@ -31,18 +32,21 @@ img {
 body {
   background-color: rgb(230, 225, 187);
 }
+.nav-btn {
+  font-family: "InstrumentSans", sans-serif;
+}
 p {
   font-family: "InstrumentSans", sans-serif;
 }
 h1 {
   font-size: 80px;
   font-family: "Sanchez";
-  src: url("Sanchez-Italic.ttf") format("truetype");
+  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
 }
 h2 {
   font: 30px;
   font-family: "Sanchez";
-  src: url("Sanchez-Italic.ttf") format("truetype");
+  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
 }
 .logo {
   width: 200px;
@@ -89,7 +93,7 @@ h2 {
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
