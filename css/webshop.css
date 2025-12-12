@@ -148,3 +148,17 @@
     font-size: 80px;
   }
 }
+
+/********** VIDEO **********/
+.produkt_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webshop_video {
+  height: 200px;
+  max-width: 100%; /* ← vigtigt! */
+  width: auto;
+  display: block;
+}

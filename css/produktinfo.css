@@ -56,6 +56,11 @@ h3 {
   cursor: pointer;
 }
 
+/*********** OTHER **********/
+.hide {
+  display: none;
+}
+
 /************ DESKTOP ****************/
 @media (min-width: 769px) {
   /********* GRID *************/
