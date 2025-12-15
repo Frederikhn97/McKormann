@@ -79,3 +79,12 @@ function changeImg3Back() {
   document.querySelector(".product_img3_2").classList.add("hide");
   document.querySelector(".product_img3").classList.remove("hide");
 }
+
+/******STAFF-PICK Button */
+document.querySelector(".staff-picks_button").addEventListener("click", scrollDown);
+
+function scrollDown() {
+  document.querySelector("#staff_picks").scrollIntoView({
+    behavior: "smooth",
+  });
+}
