@@ -58,7 +58,6 @@ h2 {
 }
 h3 {
   font-family: "InstrumentSans";
-  src: url("InstrumentSans-SemiBold.woff") format("woff");
   font-weight: 600; /* SemiBold */
   font-style: normal;
   font-display: swap;
