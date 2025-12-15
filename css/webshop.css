@@ -133,6 +133,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .view_all_btn {
