@@ -159,7 +159,7 @@ h2 {
   }
 
   .best_seller_group {
-    gap: 20px;
+    gap: 40px;
   }
 
   .webshop_overskrift {
@@ -167,20 +167,10 @@ h2 {
   }
   h2 {
     text-align: left;
-    padding-left: 60px;
+    padding-left: 40px;
   }
-}
 
-/********** VIDEO **********/
-.produkt_video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.webshop_video {
-  height: 200px;
-  max-width: 100%; /* ← vigtigt! */
-  width: auto;
-  display: block;
+  .webshop_btn_cont {
+    margin-bottom: 40px;
+  }
 }
