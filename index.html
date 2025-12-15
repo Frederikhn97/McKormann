@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/forside.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/burger.css">
 </head>
 <header class="topbar">
     <div class="nav-left">
@@ -17,7 +18,19 @@
         <a href="nyhedsbrev.html" class="nav-btn">News</a>
         <a href="webshop.html" class="nav-btn">Webshop</a>
     </div>
+    <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
 </header>
+<div class="menu-panel">
+    <a href="index.html">Forside</a>
+    <a href="AboutUs.html">About us</a>
+    <a href="nyhedsbrev.html">News</a>
+    <a href="webshop.html">Webshop</a>
+</div>
+
 <main>
     <section class="grid-1">
         <img src="billeder/billede_forside.jpg" alt="Forside">
@@ -26,11 +39,15 @@
     <H2>Since 1982</H2>
     <section class="grid-2">
         <div>
-            <img class="product_img" src="billeder/Untitled-3.jpg" alt="">
+            <div class="image-box">
+                <img class="product_img" src="billeder/DSCF3854.JPG" alt="">
+            </div>
 
 
-            <H3>Since 1982, McKorman has been a stable part of Nørrebrogade
-                Right by "Dronning Louises Bro"</H3>
+            <h2>Since 1982, McKorman has been a stable part of Nørrebrogade
+                Right by </h2>
+            <h2>"Dronning Louises Bro"</h2>
+
             We’re one of the area’s oldest clothing stores, blending vintage and streetwear for men and women. At
             McKorman,
             every
@@ -42,54 +59,132 @@
 
     </section>
     <div>
-        <button class="button">About us</button>
+        <a href="AboutUs.html">
+            <button class="button"> About us</button>
+        </a>
     </div>
     <section class="grid-3">
-        <div>
-            <H1>Seasonal Styles</H1>
-            <img class="product_img1" src="billeder/billede_forside.jpg" alt="">
-            <img class="product_img1" src="billeder/billede_forside.jpg" alt="">
-            <img class="product_img1" src="billeder/billede_forside.jpg" alt="">
-        </div>
-        <div>
-            <h1>Vintage</h1>
-            <img class="product_img1" src="billeder/billede_forside.jpg" alt="">
-            <img class="product_img1" src="billeder/billede_forside.jpg" alt="">
-            <img class="product_img1" src="billeder/billede_forside.jpg" alt="">
+        <h1>Seasonal Styles</h1>
+
+        <div class="seasonal-grid">
+            <div class="image-box">
+                <img class="product_img1" src="Product_img_webp/jacket_front.webp" alt="Jacket">
+               
+            </div>
+
+            <div class="image-box">
+                <img class="product_img1" src="Product_img_webp/white_pants_front.webp" alt="White Pants">
+                <div class="beige-bar"></div>
+            </div>
+
+            <div class="image-box">
+                <img class="product_img1" src="Oli_placeholder_img/first_test.webp" alt="T-shirt">
+                <div class="beige-bar"></div>
+            </div>
         </div>
     </section>
-</main>
 
-<body>
-    <section class="grid-4">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div style="display:flex;">
 
-            <div>
-                <div class="dropdown">
-                    <span class="arrow">▼</span> Forsendelse &
+    <section class="vintage-section">
+        <h1 class="vintage-title">Vintage</h1>
+
+        <div class="vintage-grid">
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="Product_img_webp/Dress_front.webp" alt="Dress">
                 </div>
-                <div class="dropdown">
-                    <span class="arrow">▼</span> Standklassificer
-                </div>
-                <div class="dropdown">
-                    <span class="arrow">▼</span> Levering
+                <div class="product-info">
+                    <p class="name">Dress</p>
+                    <p class="price">299 Dkk</p>
                 </div>
             </div>
 
-            <div class="right-column">
-                Mail: Lorem Ipsum<br><br>
-                Åbningstider:<br>
-                –<br>
-                –<br>
-                –<br>
-                –<br>
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="Product_img_webp/tshirt_back.webp" alt="T-shirt">
+                </div>
+                <div class="product-info">
+                    <p class="name">T-shirt</p>
+                    <p class="price">299 Dkk</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="Product_img_webp/Pant_2_Front.webp" alt="Pants">
+                </div>
+                <div class="product-info">
+                    <p class="name">Pants</p>
+                    <p class="price">299 Dkk</p>
+                </div>
             </div>
         </div>
     </section>
 
     <body>
+        <section class="grid-5">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div style="display:flex;">
+
+                <div class="dropdown_group">
+                    <div class="dropdown">
+                        <span class="arrow">▼</span> Forsendelse
+                    </div>
+                    <div class="dropdown-content">
+                        <p>Stand information here</p>
+                    </div>
+
+                    <div class="dropdown">
+                        <span class="arrow">▼</span> Standklassificer
+                    </div>
+                    <div class="dropdown-content">
+                        <p>Stand information here</p>
+                    </div>
+
+                    <div class="dropdown">
+                        <span class="arrow">▼</span> Levering
+                    </div>
+                    <div class="dropdown-content">
+                        <p>Levering information here</p>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    Mail: Lorem Ipsum<br><br>
+                    Åbningstider:<br>
+                    –<br>
+                    –<br>
+                    –<br>
+                    –<br>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+
+                    const content = dropdown.nextElementSibling;
+                    const arrow = dropdown.querySelector('.arrow');
+
+                    if (!content || !content.classList.contains('dropdown-content')) return;
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.classList.remove('active');
+                        arrow.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        content.classList.add('active');
+                        arrow.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        </script>
+
+
+        <script src="js/burger.js"></script>
+        <script src="js/forside.js"></script>
 
     </body>
 
