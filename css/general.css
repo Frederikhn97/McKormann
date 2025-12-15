@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Sanchez";
-  src: url("Fonts/Sanchez-Italic.woff") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
   font-style: italic;
   font-weight: normal;
   font-display: swap;
@@ -15,14 +15,14 @@
 
 @font-face {
   font-family: "InstrumentSans";
-  src: url("Fonts/InstrumentSans-Regular.woff") format("woff2"), format("woff");
+  src: url("../InstrumentSans-Regular.woff2") format("woff2"), url("../InstrumentSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "InstrumentSans";
-  src: url("Fonts/InstrumentSans-SemiBold.woff") format("woff");
+  src: url("InstrumentSans-SemiBold.woff") format("woff");
   font-weight: 600; /* SemiBold */
   font-style: normal;
   font-display: swap;
