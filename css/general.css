@@ -57,7 +57,7 @@ h2 {
   src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
 }
 h3 {
-  font-family: "InstrumentSans";
+  font-family: "InstrumentSans", sans-serif;
   font-weight: 600;
 }
 
