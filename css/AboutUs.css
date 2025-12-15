@@ -120,6 +120,7 @@
   src: url("Sanchez-Italic.ttf") format("truetype");
   letter-spacing: 8px;
 }
+
 @media (max-width: 768px) {
   /* About us layout */
   .aboutus-content {
