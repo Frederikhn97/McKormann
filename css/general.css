@@ -58,9 +58,10 @@ h2 {
 }
 h3 {
   font-family: "InstrumentSans";
-  font-weight: 600;
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
 }
-
 .label {
   font-family: "InstrumentSans", sans-serif;
 }
