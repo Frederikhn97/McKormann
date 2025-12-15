@@ -37,10 +37,19 @@ h2 {
 }
 
 h3 {
+  font-family: "Instrument Sans";
   font-size: 20px;
   margin-top: 15px;
 }
-
+.size {
+  font-family: "Instrument Sans";
+}
+.product-information {
+  font-family: "Instrument Sans";
+}
+.condition {
+  font-family: "Instrument Sans";
+}
 .product_info p {
   font-size: 16px;
   margin: 40px;
