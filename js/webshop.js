@@ -1,6 +1,7 @@
 const categoriBar = document.querySelector(".catergories_bar");
 const brandBar = document.querySelector(".brand_bar");
 const decadesBar = document.querySelector(".decades_bar");
+const menuBar = document.querySelector(".categories_menuBar");
 
 document.querySelector(".catergories_button").addEventListener("click", showCategori);
 
@@ -9,6 +10,7 @@ function showCategori() {
   categoriBar.classList.remove("hide");
   brandBar.classList.add("hide");
   decadesBar.classList.add("hide");
+  menuBar.classList.remove("hide");
 }
 
 document.querySelector(".brand_button").addEventListener("click", showBrand);
@@ -18,6 +20,7 @@ function showBrand() {
   brandBar.classList.remove("hide");
   categoriBar.classList.add("hide");
   decadesBar.classList.add("hide");
+  menuBar.classList.remove("hide");
 }
 
 document.querySelector(".decades_button").addEventListener("click", showDecades);
@@ -27,6 +30,7 @@ function showDecades() {
   decadesBar.classList.remove("hide");
   categoriBar.classList.add("hide");
   brandBar.classList.add("hide");
+  menuBar.classList.remove("hide");
 }
 
 /*********** Animation_on_cards *******************/
