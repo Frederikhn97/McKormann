@@ -47,14 +47,15 @@ p {
   font-family: "InstrumentSans", sans-serif;
 }
 h1 {
-  font-size: 80px;
+  text-align: center;
+  font-size: 65px;
   font-family: "Sanchez";
-  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("Fonts/Sanchez-Italic.woff") format("woff");
 }
 h2 {
   font: 30px;
   font-family: "Sanchez";
-  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("Fonts/Sanchez-Italic.woff") format("woff");
 }
 h3 {
   font-family: "InstrumentSans";
