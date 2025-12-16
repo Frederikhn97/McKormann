@@ -12,13 +12,23 @@
   font-weight: 400;
   font-display: swap;
 } */
+
 @font-face {
-  font-family: "InstrumentSans";
-  src: url("../InstrumentSans-Regular.woff2") format("woff2"), url("../InstrumentSans-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: "Instrument Sans";
+  src: url("../fonts/InstrumentSans-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "InstrumentSans";
+  src: url("InstrumentSans-SemiBold.woff") format("woff");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0px;
@@ -29,6 +39,7 @@ img {
   height: auto;
   display: block;
 }
+
 body {
   background-color: rgb(230, 225, 187);
 }
@@ -39,27 +50,42 @@ p {
   font-family: "InstrumentSans", sans-serif;
 }
 h1 {
-  font-size: 80px;
+  text-align: center;
+  font-size: 65px;
   font-family: "Sanchez";
-  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("Fonts/Sanchez-Italic.woff") format("woff");
 }
 h2 {
   font: 30px;
   font-family: "Sanchez";
-  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("Fonts/Sanchez-Italic.woff") format("woff");
+}
+h3 {
+  font-family: "InstrumentSans";
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
+}
+.label {
+  font-family: "InstrumentSans", sans-serif;
 }
 .logo {
   width: 200px;
   height: auto;
   position: relative;
-  z-index: 2; /* 👈 over striberne */
+  z-index: 2;
 }
-
+.cta_hover:hover {
+  background-color: #364585;
+  box-shadow: 0px 2px 10px #e95c5a;
+  transition: all 0.1s ease-in;
+  transform: scale(1.05);
+}
 /*********MENU*******/
 
 .topbar {
   background-color: rgb(230, 225, 187);
-  padding: 50px 60px;
+  padding: 50px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +108,7 @@ h2 {
 .nav-left,
 .nav-right {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   position: relative;
   z-index: 1;
 }
@@ -98,31 +124,18 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .nav-left,
-  .nav-right {
-    display: flex;
-    gap: 40px;
-    position: relative;
-    z-index: 1;
-    display: none;
-  }
-
-  .nav-btn {
-    padding: 6px 18px;
-    background-color: #3e4b93;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  .logo {
     display: none;
   }
 }
+
 /*********MENU DONE*******/
 
 /*********FOOTER*******/
-
-.info-sektion,
+.site-footer {
+  background-color: rgb(46, 46, 46);
+}
+/* .info-sektion,
 .info-sektion2,
 .info-sektion3 {
   display: grid;
@@ -133,12 +146,66 @@ h2 {
   font-size: 32;
   margin: 40px;
   margin-bottom: 32px;
+  color: rgb(202, 202, 202);
+} */
+/* .info-sektion,
+.info-sektion2,
+.info-sektion3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  max-width: 1000px;
+  padding: 20px 0;
+  align-items: center;
+  font-size: 32;
+  margin: 40px;
+  margin-bottom: 32px;
+  color: rgb(202, 202, 202);
 }
 
+.fb-logo {
+  padding-top: 55px;
+  width: 50px; 
+  justify-self: start; 
+}
+.ig-logo {
+  padding-top: 55px;
+  width: 50px; 
+  justify-self: start; 
+}
+.info-sektion {
+  font-family: "Instrument Sans";
+  src: url("InstrumentSans-SemiBold.woff") format("woff");
+  color: rgb(202, 202, 202);
+  font-weight: 600; 
+  font-style: normal;
+  font-display: swap;
+}
+.info-sektion3 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
 .days {
   grid-column: 3/4;
   grid-row: 1/3;
   gap: 5px;
+}
+.days {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  gap: 5px;
+}
+.hours {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  gap: 5px;
+  margin-left: 100px;
+  font-family: "Instrument Sans";
+  src: url("InstrumentSans-SemiBold.woff") format("woff");
+  font-weight: 550; 
+  font-style: normal;
+  font-display: swap;
+  color: rgb(202, 202, 202);
 }
 .info-sektion2 {
   margin-bottom: -50px;
@@ -157,8 +224,10 @@ h2 {
 .footerh2 {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 32px;
   margin-top: 40px;
+  margin-bottom: 32px;
+  color: rgb(202, 202, 202);
+  padding-top: 40px;
 }
 .footer.logo {
   width: 200px;
@@ -169,27 +238,151 @@ h2 {
   position: relative;
   z-index: 2;
 }
-.instagram-tekst {
-  margin-left: -110px;
-}
-.facebook-tekst {
-  margin-left: -110px;
-}
-.footer-grid {
-  display: none;
-}
-.footerh2v2 {
-  display: none;
-}
 .days {
   display: flex;
   flex-direction: column;
 }
-
-.days span {
+.hours {
+  display: flex;
+  flex-direction: column;
 }
-@media (max-width: 600px) {
-  .info-sektion > *:nth-child(4),
+.social img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin-top: 24px;
+} */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  max-width: 1100px;
+  margin: 40 auto;
+  padding: 60px 40px;
+  color: rgb(202, 202, 202);
+}
+
+.col h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.col p {
+  margin: 4px 0;
+}
+
+/* ÅBNINGSTIDER – indre grid */
+.opening-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px;
+}
+
+.days,
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.hours {
+  font-family: "Instrument Sans";
+  font-weight: 600;
+}
+/* SOCIALE MEDIER */
+.social-icon {
+  width: 50px;
+  display: block;
+}
+
+/* Kun afstand mellem ikonerne – ikke over den første */
+.social-icon + .social-icon {
+  margin-top: 16px; /* justér efter behov */
+}
+.footer-title footer-social {
+  gap: 16px;
+}
+.footer-title {
+  font-family: "Instrument Sans";
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 16px 0;
+  color: rgb(202, 202, 202);
+  line-height: 1.2;
+  padding-bottom: 50px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col > *:not(h3) {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 32px;
+    margin-left: 40px;
+  }
+
+  /* Fjern bund-justering på mobil */
+  .col {
+    justify-content: flex-start;
+  }
+
+  .col > *:not(h3) {
+    margin-top: 0;
+  }
+
+  /* Åbningstider: mindre luft */
+  .opening-grid {
+    column-gap: 24px;
+  }
+
+  .days,
+  .hours {
+    gap: 4px;
+  }
+
+  .col.social {
+    display: grid;
+    grid-template-columns: auto auto; /* kun så bredt som ikonerne */
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "title title"
+      "fb    ig";
+    column-gap: 12px;
+    row-gap: 12px;
+    justify-content: start; /* ingen “space-between” look */
+    align-items: center;
+  }
+
+  .col.social h3 {
+    grid-area: title;
+  }
+  .col.social .fb-logo {
+    grid-area: fb;
+  }
+  .col.social .ig-logo {
+    grid-area: ig;
+  }
+
+  /* fjern lodret margin-regel på mobil */
+  .col.social .social-icon + .social-icon {
+    margin-top: 0;
+    margin-left: 0; /* gap styrer afstanden */
+  }
+
+  /* Mindre overskrifter */
+  .footer-title {
+    font-size: 18px;
+    padding-bottom: 16px;
+  }
+}
+
+/* .info-sektion > *:nth-child(4),
   .info-sektion2 > *:nth-child(4),
   .info-sektion3 > *:nth-child(4) {
     display: none;
@@ -228,7 +421,7 @@ h2 {
 
   .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 2fr auto; /* 3 kolonner */
+    grid-template-columns: 2fr 2fr auto; 
     gap: 16px;
     padding: 0 20px;
     font-size: 15px;
@@ -241,5 +434,4 @@ h2 {
     align-items: center;
     gap: 8px;
     font-family: "InstrumentSans", sans-serif;
-  }
-}
+  } */
