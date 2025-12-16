@@ -322,7 +322,7 @@ input[type="checkbox"]:checked::after {
   transform: scale(1.1);
 }
 
-@media (min-width: 840px) {
+@media (min-width: 769px) {
   #ny-section .news-ny-flex {
     display: flex;
     gap: 20px;
