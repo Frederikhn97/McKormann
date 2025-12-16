@@ -71,8 +71,8 @@
 
 /************ HEADINGS ************/
 h1 {
-  background-color: rgba(201, 57, 57, 1);
-  border-radius: 23px;
+  /* background-color: rgba(201, 57, 57, 1);
+  border-radius: 23px; */
   padding: 0 10px;
   justify-content: center;
 }
@@ -95,7 +95,7 @@ p {
 .grid-3,
 .grid-4 {
   padding: 20px 30px;
-  margin: 10px;
+  margin: 40px;
   border-radius: 22px;
   height: auto;
 }
@@ -121,6 +121,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  margin: 40px;
 }
 
 /************ PRODUCT CARD ************/
