@@ -58,10 +58,10 @@
 .button {
   background-color: #34478b;
   color: white;
-  padding: 14px 40px;
+  padding: 20px 40px;
   border: none;
   border-radius: 22px;
-  font-size: 15px;
+  font-size: 25px;
   letter-spacing: 10px;
   cursor: pointer;
   display: block;
@@ -88,10 +88,32 @@ h3 {
 
 p {
   font-family: "Sanchez", serif;
-  /* font-size: 30px; */
+  font-size: 17
+  px;
 }
 
 /************ GRIDS ************/
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* image | text */
+  gap: 10px;
+  align-items: center;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+.grid-2 .image-box {
+  max-width: 420px;
+}
+
+.grid-2 .product_img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
 .grid-3,
 .grid-4 {
   padding: 20px 30px;
@@ -104,9 +126,6 @@ p {
   width: 100%;
   min-height: 400px;
   padding: 60px 40px;
-}
-.seasonal-style {
-  text-align: center;
 }
 /************ SEASONAL GRID ************/
 .seasonal-grid {
@@ -121,7 +140,8 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin: 40px;
+    max-width: 1200px;
+  margin: 0 auto;
 }
 
 /************ PRODUCT CARD ************/
@@ -236,5 +256,33 @@ p {
 
   .about-btn {
     margin: 0 auto;
+  }
+}
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .grid-2 .image-box {
+    margin: 0 auto;
+  }
+}
+/************************VIDEO*****************/
+
+.video-wrapper {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  margin: 90px 0; /* space above & below */
+}
+
+.video-wrapper video {
+  width: 90%; /* 👈 makes it smaller */
+  max-width: 1100px; /* stops it getting too big */
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .video-wrapper video {
+    width: 95%;
   }
 }
