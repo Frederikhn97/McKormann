@@ -190,7 +190,7 @@ p {
 .vintage-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
+  gap: 40px;
   margin: 40px;
 }
 
