@@ -27,6 +27,13 @@
   font-style: normal;
   font-display: swap;
 }
+/************ LOGO ***********/
+#Plektar_form {
+  filter: drop-shadow(red 0px 0px 20px);
+}
+#Lyn {
+  filter: drop-shadow(red 0px 15px 27px);
+}
 * {
   margin: 0;
   padding: 0px;
