@@ -342,6 +342,9 @@ p {
     font-size: 50px;
     padding: 0 30px; /* matcher grid padding */
   }
+  .product_img {
+    display: block;
+  }
 }
 
 /************************VIDEO*****************/
