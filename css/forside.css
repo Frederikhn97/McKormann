@@ -81,7 +81,6 @@
 
 .grid-2 .image-box {
   flex: 0 0 420px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -337,5 +336,10 @@ p {
   /* Knap venstrestillet */
   .grid-2-text .button {
     margin: 24px 0 0;
+  }
+  .mckorman-overskrift {
+    font-size: 50px;
+    font-size: 50px;
+    padding: 0 30px; /* matcher grid padding */
   }
 }
