@@ -47,20 +47,22 @@ p {
   font-family: "InstrumentSans", sans-serif;
 }
 h1 {
-  font-size: 80px;
+  text-align: center;
+  font-size: 65px;
   font-family: "Sanchez";
-  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("Fonts/Sanchez-Italic.woff") format("woff");
 }
 h2 {
   font: 30px;
   font-family: "Sanchez";
-  src: url("../Sanchez-Italic.woff2") format("woff2"), url("../Sanchez-Italic.woff") format("woff");
+  src: url("Fonts/Sanchez-Italic.woff") format("woff");
 }
 h3 {
   font-family: "InstrumentSans";
-  font-weight: 600;
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
 }
-
 .label {
   font-family: "InstrumentSans", sans-serif;
 }
@@ -80,7 +82,7 @@ h3 {
 
 .topbar {
   background-color: rgb(230, 225, 187);
-  padding: 50px 60px;
+  padding: 50px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,7 +105,7 @@ h3 {
 .nav-left,
 .nav-right {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   position: relative;
   z-index: 1;
 }

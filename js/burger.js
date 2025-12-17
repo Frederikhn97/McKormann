@@ -1,7 +1,7 @@
 const burger = document.querySelector(".burger");
-const topbar = document.querySelector(".topbar");
+const menu = document.querySelector(".menu-panel");
 
 burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  topbar.classList.toggle("active");
+  burger.classList.toggle("active"); // Burger animation
+  menu.classList.toggle("active"); // Menu slides ind
 });
