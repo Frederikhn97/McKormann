@@ -40,6 +40,8 @@
     gap: 6px;
     transition: right 0.3s ease-in-out;
     cursor: pointer;
+    background-color: transparent;
+    box-shadow: none;
   }
   .topbar button {
     align-items: center;
@@ -57,6 +59,14 @@
   .burger:hover {
     transition: 0.1s ease-in;
     transform: scale(1.1);
+  }
+
+  .burger:hover,
+  .burger:focus,
+  .burger:active {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
   }
 
   .nav-left,
