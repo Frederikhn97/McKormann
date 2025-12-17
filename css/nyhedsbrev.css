@@ -15,7 +15,6 @@
 .news-info h1 {
   font-size: 60px;
   color: black;
-  font-style: italic;
   font-weight: bold;
   text-decoration: 2px solid black;
 }
@@ -91,7 +90,6 @@ img {
 /**/
 .news-arrivals h2 {
   color: black;
-  font-style: italic;
   font-weight: bold;
   text-decoration: 2px solid black;
   font-size: 40px;
@@ -153,7 +151,6 @@ button:hover {
 }
 .form-info h2 {
   color: #d2cdac;
-  font-style: italic;
   font-weight: bold;
   text-shadow: black 2px 2px 4px;
   text-decoration: 2px solid black;
