@@ -14,13 +14,12 @@
 } */
 
 @font-face {
-  font-family: "Instrument Sans";
-  src: url("../fonts/InstrumentSans-Regular.woff") format("woff");
-  font-weight: 400;
+  font-family: "InstrumentSans";
+  src: url("../InstrumentSans-Regular.woff2") format("woff2"), url("../InstrumentSans-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "InstrumentSans";
   src: url("InstrumentSans-SemiBold.woff") format("woff");
@@ -28,7 +27,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 * {
   margin: 0;
   padding: 0px;
@@ -39,7 +37,6 @@ img {
   height: auto;
   display: block;
 }
-
 body {
   background-color: rgb(230, 225, 187);
 }
@@ -79,7 +76,7 @@ h3 {
   background-color: #364585;
   box-shadow: 0px 2px 10px #e95c5a;
   transition: all 0.1s ease-in;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 /*********MENU*******/
 
