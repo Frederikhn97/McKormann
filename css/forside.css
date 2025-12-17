@@ -67,6 +67,7 @@
 }
 .grid-2 {
   padding: 60px 40px;
+  margin-left: 40px;
 }
 
 .grid-2-inner {
@@ -327,6 +328,7 @@ p {
   }
   h1 {
     font-size: 32px;
+    margin-left: 40px;
   }
   .overskrift_size {
     font-size: 32px;
