@@ -46,7 +46,7 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  padding: 20px;
+  padding: 10px;
   background-color: #34478b;
 }
 
@@ -76,7 +76,6 @@
   align-items: flex-start;
   gap: 80px;
   padding: 20px 30px;
-  margin: 40px;
 }
 
 .grid-2 .image-box {
@@ -120,18 +119,23 @@
   padding: 14px 40px;
   border: none;
   border-radius: 22px;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 10px;
   cursor: pointer;
   display: block;
   margin: 40px auto;
   font-family: Arial, sans-serif;
 }
-
+.signup:hover {
+  background-color: rgba(201, 57, 57, 1);
+  box-shadow: 0px 2px 10px;
+  transition: 0.1s ease-in;
+  transform: scale(1.1);
+}
 /************ HEADINGS ************/
 h1 {
-  /* background-color: rgba(201, 57, 57, 1);
-  border-radius: 23px; */
+  background-color: rgba(201, 57, 57, 1);
+  border-radius: 23px;
   padding: 0 10px;
   justify-content: center;
 }
@@ -186,7 +190,7 @@ p {
 .vintage-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 80px;
   margin: 40px;
 }
 
@@ -240,7 +244,6 @@ p {
   margin-bottom: 10px;
   border-radius: 25px;
   display: flex;
-  align-items: center;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -256,7 +259,7 @@ p {
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: 0.3s ease;
   background: #000;
   color: #fff;
   padding: 0 25px;
@@ -356,12 +359,12 @@ p {
 }
 
 .video-wrapper video {
-  width: 90%; /* 👈 makes it smaller */
-  max-width: 1100px; /* stops it getting too big */
+  width: 100%; /* 👈 makes it smaller */
+  max-width: 1200px; /* stops it getting too big */
   border-radius: 20px;
 }
 @media (max-width: 768px) {
   .video-wrapper video {
-    width: 95%;
+    width: 100%;
   }
 }
